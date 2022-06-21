@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-html-css-js-pdjpIIK_bu)
-- Live Site URL: [[Chat app CSS illustration](https://axldev96.github.io/interactive_rating_component/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/chat-app-css-illustration-DpLIUqltKX)
+- Live Site URL: [[Chat app CSS illustration](https://axldev96.github.io/chat-app-css-illustration/()
 
 ## My process
 
