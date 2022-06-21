@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Chat app CSS illustration</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="css-figure"></section>
+      <section class="phone">
+        <header>
+          <div class="notch"></div>
+          <div class="info">
+            <img
+              class="icon-left"
+              src="./src/images/left.png"
+              alt="left arrow"
+            />
+            <img
+              class="avatar-image"
+              src="./src/images/avatar.jpg"
+              alt="avatar image"
+            />
+            <div class="titles">
+              <h2>Samuel Green</h2>
+              <p>Available to Walk</p>
+            </div>
+
+            <img
+              class="vertical-menu"
+              src="./src/images/menu-vertical.png"
+              alt="menu-vertical"
+            />
+          </div>
+        </header>
+        <div class="chat-section">
+          <p class="msg received">That sounds great. I’d be happy with that.</p>
+          <p class="msg received">
+            Could you send over some pictures of your dog, please?
+          </p>
+          <div class="images-send msg send">
+            <img src="./src/images/dog-image-1.jpg" alt="dog image 1" />
+            <img src="./src/images/dog-image-2.jpg" alt="dog image 1" />
+            <img src="./src/images/dog-image-3.jpg" alt="dog image 1" />
+          </div>
+          <p class="msg send">Here are a few pictures. She’s a happy girl!</p>
+          <p class="msg send">Can you make it?</p>
+          <p class="msg received">
+            She looks so happy! The time we discussed works. How long shall I
+            take her out for?
+          </p>
+          <div class="prices-msg">
+            <div class="circle">0</div>
+            <p>30 minutes walk</p>
+            <p class="price">$29</p>
+          </div>
+          <div class="prices-msg">
+            <div class="circle">0</div>
+            <p>1 hour walk</p>
+            <p class="price">$29</p>
+          </div>
+
+          <div class="input">
+            <input
+              class="message"
+              type="text"
+              placeholder="Type a message..."
+            />
+            <button class="send-button">
+              <img
+                class="icon-right"
+                src="./src/images/icon-right.png"
+                alt="icon right"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="information">
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

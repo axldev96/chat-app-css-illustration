@@ -1,0 +1,289 @@
+@import './variables.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--light-grayish-violet-app-background);
+  font-family: var(--main-font);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  gap: 35rem;
+  align-items: center;
+  justify-content: flex-start;
+  /* margin-bottom: 10rem; */
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+}
+
+.css-figure {
+  position: absolute;
+  z-index: -1;
+  margin-left: -10rem;
+  top: 0;
+  width: 50rem;
+  height: 85vh;
+  max-height: 80rem;
+  min-height: 70rem;
+  border-bottom-left-radius: 40rem;
+  border-bottom-right-radius: 40rem;
+  background: linear-gradient(
+    20deg,
+    var(--light-violet) -20%,
+    var(--light-magenta) 200%
+  );
+  background-position: right -10rem top 200%;
+}
+
+@media (max-width: 630px) {
+  .css-figure {
+    margin-left: -16rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .css-figure {
+    margin-left: -22rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .css-figure {
+    margin-left: -33rem;
+  }
+}
+
+/* ////////////// Phone /////////// */
+
+.phone {
+  position: relative;
+  left: 33rem;
+  /* top: 5vh; */
+  margin-top: 10vh;
+  width: 29rem;
+  min-width: 29rem;
+  padding: 0.8rem;
+  background-color: var(--white);
+  border-radius: 3rem;
+  box-shadow: 24px 23px 56px -12px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 24px 23px 56px -12px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 24px 23px 56px -12px rgba(0, 0, 0, 0.14);
+}
+
+@media (max-width: 720px) {
+  .phone {
+    position: static;
+    margin: 4rem auto 0rem auto;
+  }
+}
+
+.phone header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+  background: linear-gradient(
+    60deg,
+    var(--light-violet) 0%,
+    var(--light-magenta) 100%
+  );
+}
+
+.phone header .notch {
+  height: 2rem;
+  width: 55%;
+  border-bottom-right-radius: 1.4rem;
+  border-bottom-left-radius: 1.4rem;
+  background-color: var(--white);
+}
+
+.phone header .info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 1.4rem 2rem;
+  gap: 1rem;
+  position: relative;
+}
+
+.phone header .info .avatar-image {
+  width: 3rem;
+  border-radius: 50%;
+  border: 1.2px solid var(--white);
+}
+
+.phone header .info .icon-left {
+  width: 2rem;
+  height: 2rem;
+  margin-right: -0.8rem;
+}
+
+.phone header .info h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--light-grayish-violet-app-background);
+}
+
+.phone header .info p {
+  color: var(--pale-violet-sub-heading-at-the-top-of-the-app-UI);
+}
+
+.phone header .info .vertical-menu {
+  position: absolute;
+  left: 90%;
+  width: 1.4rem;
+}
+
+.chat-section {
+  background-color: var(--light-grayish-violet-app-background);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chat-section .msg {
+  max-width: 70%;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.chat-section .received {
+  color: var(--moderate-violet-chat-on-the-left);
+  background-color: #eeeeee;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.chat-section .send {
+  color: var(--desaturated-dark-violet-chat-on-the-right);
+  background-color: var(--white);
+  align-self: flex-end;
+  border-bottom-right-radius: 0.4rem;
+  box-shadow: -6px 24px 56px -19px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: -6px 24px 56px -19px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: -6px 24px 56px -19px rgba(0, 0, 0, 0.53);
+}
+
+.images-send {
+  display: flex;
+  gap: 1rem;
+}
+
+.images-send.msg {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.images-send img {
+  width: 4rem;
+  border-radius: 1rem;
+}
+
+.prices-msg {
+  max-width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  padding: 1rem;
+  background: linear-gradient(
+    60deg,
+    var(--light-magenta) 0%,
+    var(--light-violet) 100%
+  );
+  border-radius: 1rem;
+  border-bottom-left-radius: 0.4rem;
+  color: var(--white);
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+.prices-msg .price {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: center;
+  position: relative;
+}
+
+.input .message {
+  width: 100%;
+  border-radius: 3rem;
+  padding: 1.2rem;
+  outline: none;
+  border: none;
+  font-size: 0.8rem;
+  background-color: var(--white);
+}
+
+.send-button {
+  position: absolute;
+  left: 86%;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(
+    --very-dark-desaturated-violet-submit-button-background
+  );
+}
+
+.send-button .icon-right {
+  width: 50%;
+}
+
+.information {
+  width: 60rem;
+  font-size: 2rem;
+  color: var(--dark-grayish-violet-paragraph);
+  margin: 10rem;
+  align-self: center;
+  line-height: 1.5;
+}
+
+@media (max-width: 680px) {
+  .information {
+    max-width: 90%;
+  }
+}
+
+.information h1 {
+  color: var(--very-dark-desaturated-violet-main-heading);
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+}
